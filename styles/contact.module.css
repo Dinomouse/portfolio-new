@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Gotu&display=swap");
+
+.contactContainer {
+  background-color: #38a169;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Gotu", sans-serif;
+}
+
+.contactCard {
+  background: rgb(255, 255, 255);
+  height: 90%;
+  width: 85%;
+  border: 3px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.form {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 70%;
+}
+
+.inputBar {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 100%;
+  border: 2px solid black;
+}
+
+.submitButton {
+  border: 1px solid black;
+  border-radius: 3px;
+  width: 50%;
+  height: 6%;
+  background-color: black;
+  color: white;
+}
+.submitButton:hover {
+  background-color: rgb(42, 41, 41);
+  cursor: pointer;
+}
+
+.contactIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  width: 30%;
+}
