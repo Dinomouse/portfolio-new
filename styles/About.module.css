@@ -49,11 +49,16 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-left: 3px;
-  padding-right: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
   align-items: center;
   height: 90%;
-  font-size: 1.2rem;
+  font-size: 1.8vw;
+}
+
+.listItem:hover {
+  transform: scale(1.05);
+  transition-duration: 100ms;
 }
 
 .paragraph {

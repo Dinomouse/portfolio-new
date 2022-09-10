@@ -22,7 +22,12 @@ import { faDatabase, faE, faX } from "@fortawesome/free-solid-svg-icons";
 const Home = () => {
   return (
     <div className={styles.aboutContainer}>
-      <div className={styles.card}>
+      <motion.div
+        className={styles.card}
+        initial={{ y: "1000px" }}
+        animate={{ y: "0px" }}
+        transition={{ type: "spring", duration: 2 }}
+      >
         <h1 className={styles.h1}>About Me</h1>
 
         <p className={styles.paragraph}>
@@ -35,72 +40,137 @@ const Home = () => {
           intensive web development bootcamp where I was immersed into front and
           back end technologies, through collaborative workshops and hackathons.
         </p>
-      </div>
-      <div className={styles.card}>
+      </motion.div>
+      <motion.div
+        className={styles.card}
+        initial={{ x: "1000px" }}
+        animate={{ x: "0px" }}
+        transition={{ type: "spring", duration: 2 }}
+      >
         <h1 className={styles.h1}>My Techstack</h1>
 
         <div className={styles.list}>
           <div className={styles.block}>
-            <li className={styles.listItem}>
+            <motion.li
+              className={styles.listItem}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 3 }}
+            >
               HTML
               <FontAwesomeIcon id="js" icon={faHtml5} />
-            </li>
+            </motion.li>
 
-            <li className={styles.listItem}>
+            <motion.li
+              className={styles.listItem}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 3.5 }}
+            >
               CSS <FontAwesomeIcon id="node" icon={faCss3} />
-            </li>
+            </motion.li>
           </div>
           <div className={styles.block}>
-            <li className={styles.listItem}>
+            <motion.li
+              className={styles.listItem}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 4 }}
+            >
               JavaScript
               <FontAwesomeIcon id="js" icon={faJs} />
-            </li>
+            </motion.li>
 
-            <li className={styles.listItem}>
+            <motion.li
+              className={styles.listItem}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 4.5 }}
+            >
               Node.js <FontAwesomeIcon id="node" icon={faNodeJs} />
-            </li>
+            </motion.li>
           </div>
           <div className={styles.block}>
-            <li className={styles.listItem}>
+            <motion.li
+              className={styles.listItem}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 5 }}
+            >
               React.js
               <FontAwesomeIcon id="react" icon={faReact} />
-            </li>
-            <li className={styles.listItem}>
+            </motion.li>
+            <motion.li
+              className={styles.listItem}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 5.5 }}
+            >
               Express.js
               <div id="ex">
                 <FontAwesomeIcon id="e" icon={faE} />
               </div>
-            </li>
+            </motion.li>
           </div>
           <div className={styles.block}>
-            <li className={styles.listItem}>
+            <motion.li
+              className={styles.listItem}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 6 }}
+            >
               Golang <FontAwesomeIcon id="python" icon={faGolang} />
-            </li>
-            <li className={styles.listItem}>
+            </motion.li>
+            <motion.li
+              className={styles.listItem}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 6.5 }}
+            >
               Power BI
               <FontAwesomeIcon id="bi" icon={faMicrosoft} />
-            </li>{" "}
+            </motion.li>{" "}
           </div>
           <div className={styles.block}>
-            <li className={styles.listItem}>
+            <motion.li
+              className={styles.listItem}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 7 }}
+            >
               SQL <FontAwesomeIcon id="db" icon={faDatabase} />
-            </li>
-            <li className={styles.listItem}>
+            </motion.li>
+            <motion.li
+              className={styles.listItem}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 7.5 }}
+            >
               Figma
               <FontAwesomeIcon id="aws" icon={faFigma} />
-            </li>
+            </motion.li>
           </div>
           <div className={styles.block}>
-            <li className={styles.listItem}>
+            <motion.li
+              className={styles.listItem}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 8 }}
+            >
               Github <FontAwesomeIcon id="db" icon={faGithubAlt} />
-            </li>
-            <li className={styles.listItem}>
+            </motion.li>
+            <motion.li
+              className={styles.listItem}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 8.5 }}
+            >
               Git
               <FontAwesomeIcon id="aws" icon={faGitAlt} />
-            </li>
+            </motion.li>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
