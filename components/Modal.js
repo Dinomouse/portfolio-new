@@ -38,7 +38,7 @@ export default function VerticallyCenter() {
           <ModalCloseButton />
           <ModalBody>
             <div>
-              Click the menu on the top right and browse my website. Don't
+              Click the menu on the top right and browse my website. Don&apos;t
               forget to check out my GitHub at{" "}
               <a href="https://github.com/Dinomouse" style={{ color: "blue" }}>
                 https://github.com/Dinomouse
