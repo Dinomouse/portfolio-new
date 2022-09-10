@@ -4,6 +4,7 @@
   background-color: #38a169;
   color: white;
   height: 80vh;
+  height: calc(var(--vh, 1vh) * 80);
   font-size: 5.8vw;
   display: flex;
   justify-content: space-evenly;
@@ -28,6 +29,7 @@
 .modal {
   background-color: #38a169;
   height: 10vh;
+  height: calc(var(--vh, 1vh) * 10);
   display: flex;
   justify-content: center;
   align-items: center;

@@ -9,6 +9,7 @@
   color: white;
   font-family: "Gotu", sans-serif;
   height: 10vh;
+  height: calc(var(--vh, 1vh) * 10);
   font-size: 1rem;
 }
 
